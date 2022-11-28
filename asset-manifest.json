@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.1d9dc173.js",
+    "main.css": "/static/css/main.f9e349ba.css",
+    "main.js": "/static/js/main.fde3d337.js",
     "static/js/787.d40d1f79.chunk.js": "/static/js/787.d40d1f79.chunk.js",
+    "static/media/Photo_for_tech.jpg": "/static/media/Photo_for_tech.520aa314633abd602bd6.jpg",
+    "static/media/parag_jain_logo.png": "/static/media/parag_jain_logo.bf345057189bd02385ce.png",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.1d9dc173.js.map": "/static/js/main.1d9dc173.js.map",
+    "main.f9e349ba.css.map": "/static/css/main.f9e349ba.css.map",
+    "main.fde3d337.js.map": "/static/js/main.fde3d337.js.map",
     "787.d40d1f79.chunk.js.map": "/static/js/787.d40d1f79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.1d9dc173.js"
+    "static/css/main.f9e349ba.css",
+    "static/js/main.fde3d337.js"
   ]
 }
