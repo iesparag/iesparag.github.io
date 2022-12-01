@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Tech from './components/Tech';
+import { Box } from '@chakra-ui/react';
 
 function App() {
 
@@ -11,8 +12,12 @@ function App() {
     <div  >
       <Navbar />
       <Home/>
-      <About/>
-     <Tech/>
+      <Box px={{base:"10px",md:"80px",lg:"100px" }} >
+        
+        <About/>
+        <Tech/>
+      </Box>
+     
     </div>
   );
 }

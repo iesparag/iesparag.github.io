@@ -8,24 +8,24 @@ import Type from '../parts/Type';
 
 const Home = () => {
   return (
-   <Box  id='home' padding={{base:"auto",sm:"auto",md:"50px",lg:"20px 100px"}} >
-      <Grid alignItems="center" justifyContent="space-around" p="20px" mt="20px" gap={5}   gridTemplateColumns={{md:"1.5fr 1fr"}} >
+   <Box  id='home' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}} >
+      <Grid mt="20px" alignItems="center" justifyContent="space-around" px={{base:"20px",md:"80px",lg:"150px" }} gap={10}   gridTemplateColumns={{md:"1.5fr 1fr"}} >
        
-        <Box   >
+       
           <Box   >
-          <Flex    alignItems="center" >
+          <Flex     >
             
-            <Heading mb="10px" as="h1" size="2xl" >Parag Jain...</Heading>
+            <Heading as="h1" size="xl" >Parag Jain...</Heading>
           </Flex>
-          <Flex   alignItems="center" >
+          <Flex    >
             
-            <Heading mt="30px" as="h1" size="lg" ><Type/></Heading>
+            <Heading my="20px" as="h1" size="lg" ><Type/></Heading>
           </Flex>
-          <Heading lineHeight="50px" mt="30px">Great web <span>Designer</span> without functionality is like a sports car with no <span>Engine...</span></Heading>
+          <Heading as="h1" size="lg" lineHeight="50px" my="30px">Great web <span>Designer</span> without functionality is like a sports car with no <span>Engine...</span></Heading>
           </Box>
-        </Box>
         
-        <Flex  m={{base:"auto"}}     alignItems='center' justifyContent="center"   >
+        
+        <Flex  m={{base:"auto"}}      justifyContent="center"   >
            <Image boxShadow="base" borderRadius="50%"  border="5px solid #fb982f"  src={Photo_for_tech} alt="profile_pic" />
         </Flex>
         

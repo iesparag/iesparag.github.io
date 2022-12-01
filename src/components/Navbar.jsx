@@ -1,4 +1,4 @@
-import { Box, Image,Show,Hide ,Flex,} from '@chakra-ui/react'
+import { Box, Image,Show,Hide ,Flex, Heading, Button,} from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/react'
 import {
   Drawer,
@@ -12,6 +12,7 @@ import {
 import React from 'react'
 import parag_jain_logo from "../assets/parag_jain_logo.png"
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { HiOutlineDownload } from 'react-icons/hi'
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -31,30 +32,31 @@ const Navbar = () => {
 
   return (
     
-    <Box mb="100px" className='navbar'    >
-        <Box  zIndex="100"  display="block"  position="fixed" top="0" justifyContent="space-evenly" width="100vw" >
-        <Box  backgroundColor="#fff"   justifyContent={{base:"space-between",md:"space-between"}} id='navbar' className='navbar_conatiner' display="flex" alignItems="center" boxShadow="dark-lg"  >
+    <Box   className='navbar'    >
+        <Box    zIndex="100"  display="block"  position="fixed" top="0" justifyContent="space-evenly" width="100vw" >
+        <Box     justifyContent={{base:"space-between",md:"space-between"}} id='navbar' className='navbar_conatiner' display="flex" alignItems="center" boxShadow="dark-lg"  padding="10px" >
           <Hide below="base" >
-            <Box   className='navbar_left'>
-                <a href="#navbar"><Image  width={{base:"200px",sm:"200px",md:"300px"}} src={parag_jain_logo} alt="logo" ></Image></a>
+            <Box alignItems="center"  className='navbar_left'>
+                <a href="#home"><Heading as="h1" size="2xl" letterSpacing="2px" >PARAG</Heading></a>
             </Box>
             </Hide>
             <Hide below="md">
             <Box  className='navbar_right' flexGrow="3"  >
-               <Flex justifyContent='space-evenly'>
+               <Flex alignItems="center" justifyContent='space-evenly'>
                 
-                <p className='a-tag'  ><a href="#about">About</a></p>
+                <p className='a-tag'  ><a  href="#about">About</a></p>
                 <p className='a-tag'  ><a href="#skill">Skill</a></p>
                 <p className='a-tag'  ><a href="#projects">Projects</a></p>
                 <p className='a-tag'  ><a href="#github">Github</a></p>
                 <p className='a-tag'  ><a href="#contact">Contact</a></p>
-                <p className='a-tag'  ><button><a href="#resume">Resume</a></button></p>
+                <button className='btn_pill' ><a   href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"   download  >RESUME &#8595;
+              </a></button>
                </Flex>
             </Box>
             </Hide>
             <Show below='md' >
-                   <Box onClick={() => handleClick(size)}  paddingRight="30px">
-                     <HamburgerIcon  key={size} w={6} size="lg" fontWeight="bold"  color="black"  />
+                   <Box m="auto" display="flex" alignItems="center" justifyContent="center" onClick={() => handleClick(size)}  >
+                     <HamburgerIcon position="fixed"  right="20px"   key={size}   fontWeight="bold" h={8} w={8} color="black"  />
                      {/* ----------------------------- */}
                      <Drawer onClose={onClose} isOpen={isOpen} size={size}>
         <DrawerOverlay />
@@ -63,14 +65,16 @@ const Navbar = () => {
           <DrawerHeader ></DrawerHeader>
           <DrawerBody>
           <Box  className='navbar_right' flexGrow="3"  >
-              
-                <p className='side' onClick={onClose}><a href="#home">Home</a></p>
-                <p className='side' onClick={onClose}><a href="#about">About</a></p>
-                <p className='side' onClick={onClose}><a href="#skill">Skill</a></p>
-                <p className='side' onClick={onClose}><a href="#projects">Projects</a></p>
-                <p className='side' onClick={onClose}><a href="#github">Github</a></p>
-                <p className='side' onClick={onClose}><button><a href="#achievements">Achievements</a></button></p>
-                <p className='side' onClick={onClose}><a href="#contact">Contact</a></p>
+              <Button bg="black" as="a" href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"  className='side' download onClick={onClose} >RESUME &#8595;
+             
+              </Button>
+          <a href="#home"><p className='side' onClick={onClose}>Home</p></a>
+          <a href="#about"> <p className='side' onClick={onClose}>About</p></a>
+          <a href="#skill"> <p className='side' onClick={onClose}>Skill</p></a>
+          <a href="#projects"> <p className='side' onClick={onClose}>Projects</p></a>
+          <a href="#github"> <p className='side' onClick={onClose}>Github</p></a>
+          <a href="#achievements"> <p className='side' onClick={onClose}>Achievements</p></a>
+          <a href="#contact">   <p className='side' onClick={onClose}>Contact</p></a>
                 
               
             </Box>
