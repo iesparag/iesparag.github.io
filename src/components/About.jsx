@@ -12,7 +12,7 @@ const About = () => {
          <Box m="auto"   >
           <Heading as="h1" mb="15px" size={{base:"lg",md:"xl"}} >I'm Parag jain and <span>Full Stack Web Developer</span></Heading>
           
-          <Heading  px={{base:"15px",md:"50px"}} lineHeight={{base:"30px",md:"40px"}} as="h4" size={{base:"sm",md:"md"}}  letterSpacing="1.5px"   >Enthusiastic and well-organized Full Stack Web Developer with <span>2500+ hours</span> of rigorous <span>coding experience</span>. Curious to learn about  emerging web technologies. Eager to join, to bring in top-class  Full Stack Web Development and <span> problem-solving skills</span>.</Heading>
+          <Heading  px={{base:"15px",md:"50px"}} lineHeight={{base:"30px",md:"40px"}} as="h4" size={{base:"18px",md:"md"}}  letterSpacing="1.5px"   >Enthusiastic and well-organized Full Stack Web Developer with <span>2500+ hours</span> of rigorous <span>coding experience</span>. Curious to learn about  emerging web technologies. Eager to join, to bring in top-class  Full Stack Web Development and <span> problem-solving skills</span>.</Heading>
           
           </Box>
           <Flex gap={10} mt="50px" >

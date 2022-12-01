@@ -28,7 +28,7 @@ const Navbar = () => {
  
 
   
-  
+  //resume link https://drive.google.com/file/d/1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo/view?usp=share_link
 
   return (
     
