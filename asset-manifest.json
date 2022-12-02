@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.38b6d543.css",
-    "main.js": "/static/js/main.fe02bcd0.js",
+    "main.js": "/static/js/main.114b36ea.js",
     "static/js/787.d40d1f79.chunk.js": "/static/js/787.d40d1f79.chunk.js",
     "static/media/Photo_for_tech.jpg": "/static/media/Photo_for_tech.520aa314633abd602bd6.jpg",
     "static/media/parag_jain_logo.png": "/static/media/parag_jain_logo.bad49215d26644013453.png",
     "index.html": "/index.html",
     "main.38b6d543.css.map": "/static/css/main.38b6d543.css.map",
-    "main.fe02bcd0.js.map": "/static/js/main.fe02bcd0.js.map",
+    "main.114b36ea.js.map": "/static/js/main.114b36ea.js.map",
     "787.d40d1f79.chunk.js.map": "/static/js/787.d40d1f79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38b6d543.css",
-    "static/js/main.fe02bcd0.js"
+    "static/js/main.114b36ea.js"
   ]
 }
