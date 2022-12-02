@@ -45,7 +45,7 @@ const Navbar = () => {
                <Flex alignItems="center" justifyContent='space-evenly'>
                 
                 <p className='a-tag'  ><a  href="#about">About</a></p>
-                <p className='a-tag'  ><a href="#skill">Skill</a></p>
+                <p className='a-tag'  ><a href="#skill">Skills</a></p>
                 <p className='a-tag'  ><a href="#projects">Projects</a></p>
                 <p className='a-tag'  ><a href="#github">Github</a></p>
                 <p className='a-tag'  ><a href="#contact">Contact</a></p>
