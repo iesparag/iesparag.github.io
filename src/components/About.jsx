@@ -5,14 +5,14 @@ const About = () => {
   return (
     <Box paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}   id='about' >
         <Box className='section-title' >
-           <Heading as="h2"  size="2xl" >About Page</Heading>
+           <Heading opacity="0.5" as="h2"  size="2xl" >About Page</Heading>
         </Box>
         {/* below content start */}
          <Box px="10px"  >
          <Box m="auto"   >
           <Heading as="h1" mb="15px" size={{base:"lg",md:"xl"}} >I'm Parag jain and <span>Full Stack Web Developer</span></Heading>
           
-          <Heading  px={{base:"15px",md:"50px"}} lineHeight={{base:"30px",md:"40px"}} as="h4" size={{base:"18px",md:"md"}}  letterSpacing="1.5px"   >Enthusiastic and well-organized Full Stack Web Developer with <span>2500+ hours</span> of rigorous <span>coding experience</span>. Curious to learn about  emerging web technologies. Eager to join, to bring in top-class  Full Stack Web Development and <span> problem-solving skills</span>.</Heading>
+          <Box  px={{base:"15px",md:"50px",lg:"100px"}} lineHeight={{base:"30px",md:"40px"}} as="h4"  size={{base:"18px",md:"md"}}  letterSpacing="1.5px"   >Enthusiastic and well-organized Full Stack Web Developer with <span>2500+ hours</span> of rigorous <span>coding experience</span>. Curious to learn about  emerging web technologies. Eager to join, to bring in top-class  Full Stack Web Development and <span> problem-solving skills</span>.</Box>
           
           </Box>
           <Flex gap={10} mt="50px" >
