@@ -11,7 +11,7 @@ import {
 const Softskill = () => {
    
   return (
-    <Box  m="auto"  >
+    <Box  m="auto"  marginBottom="30px" >
          <Grid gap={5}  m="auto" gridTemplateColumns={{base:"1fr 1fr",md:"1fr 1fr",lg:"1fr 1fr"}} >
         <Box m="auto"  >
             <Accordion allowToggle w={{base:"auto",md:"200px",lg:"400px"}} >
@@ -26,17 +26,17 @@ const Softskill = () => {
                     </AccordionButton>
                     </h2 >
                         <AccordionPanel pb={4}>
-                        <b><span >Teamwork</span></b>
+                        <b>Teamwork</b>
                         
                         </AccordionPanel>
                         <hr />
                         <AccordionPanel pb={4}>
-                        <b><span>Patience</span></b>
+                        <b>Patience</b>
                         
                         </AccordionPanel>
                         <hr />
                         <AccordionPanel pb={4}>
-                        <b><span>Problem-Solving</span></b>
+                        <b>Problem-Solving</b>
                         
                         </AccordionPanel>
                 </AccordionItem>
@@ -57,15 +57,15 @@ const Softskill = () => {
                     </AccordionButton>
                     </h2>
                         <AccordionPanel pb={4}>
-                       <b> <span>Coding ( 1200+ Hours ) </span></b>
+                       <b> Coding ( 1200+ Hours ) </b>
                         </AccordionPanel>
                         <hr />
                         <AccordionPanel pb={4}>
-                        <b><span>DSA ( 300+ Problems ) </span></b>
+                        <b>DSA ( 300+ Problems ) </b>
                         </AccordionPanel>
                         <hr />
                         <AccordionPanel pb={4}>
-                        <b><span>Soft-Skill ( 100+ Hours  ) </span></b>
+                        <b>Soft-Skill ( 100+ Hours  ) </b>
                         
                         </AccordionPanel>
                 </AccordionItem>

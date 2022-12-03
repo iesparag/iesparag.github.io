@@ -1,4 +1,4 @@
-import { Box, Image,Show,Hide ,Flex, Heading, Button,} from '@chakra-ui/react'
+import { Box, Show,Hide ,Flex, Heading, Button,} from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/react'
 import {
   Drawer,
@@ -10,10 +10,9 @@ import {
   DrawerCloseButton,
 } from '@chakra-ui/react'
 import React from 'react'
-import parag_jain_logo from "../assets/parag_jain_logo.png"
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { HiOutlineDownload } from 'react-icons/hi'
 import "./Navbar.css"
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [size, setSize] = React.useState("");
@@ -37,18 +36,32 @@ const Navbar = () => {
         <Box     justifyContent={{base:"space-between",md:"space-between"}} id='navbar' className='navbar_conatiner' display="flex" alignItems="center" boxShadow="dark-lg"  padding="10px" >
           <Hide below="base" >
             <Box alignItems="center"  className='navbar_left'>
-                <a href="#home"><Heading as="h1" size="2xl" letterSpacing="2px" >PARAG</Heading></a>
+                <Link to="home" activeClass='active'  spy={true}    smooth={true} duration={2000} ><Heading as="h1" size="2xl" letterSpacing="2px" >PARAG</Heading></Link>
             </Box>
             </Hide>
             <Hide below="md">
             <Box  className='navbar_right' flexGrow="3"  >
                <Flex alignItems="center" justifyContent='space-evenly'>
                 
-                <p className='a-tag'  ><a  href="#about">About</a></p>
-                <p className='a-tag'  ><a href="#skill">Skills</a></p>
-                <p className='a-tag'  ><a href="#projects">Projects</a></p>
-                <p className='a-tag'  ><a href="#github">Github</a></p>
-                <p className='a-tag'  ><a href="#contact">Contact</a></p>
+                
+
+                
+                <Link to="about" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >About</Link>
+
+                <Link to="skill" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Skills</Link>
+
+                <Link to="projects" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Projects</Link>
+
+                <Link to="github" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Github</Link>
+
+                <Link to="contact" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Contact</Link>
+                
+                  
+                  
+                  
+
+
+                
                 <button className='btn_pill' ><a   href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"   download  >RESUME &#8595;
               </a></button>
                </Flex>
@@ -66,17 +79,16 @@ const Navbar = () => {
           <DrawerBody>
           <Box  className='navbar_right' flexGrow="3"  >
               <Button bg="black" as="a" href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"  className='side' download onClick={onClose} >RESUME &#8595;
-             
               </Button>
-          <a href="#home"><p className='side' onClick={onClose}>Home</p></a>
-          <a href="#about"> <p className='side' onClick={onClose}>About</p></a>
-          <a href="#skill"> <p className='side' onClick={onClose}>Skill</p></a>
-          <a href="#projects"> <p className='side' onClick={onClose}>Projects</p></a>
-          <a href="#github"> <p className='side' onClick={onClose}>Github</p></a>
-          <a href="#achievements"> <p className='side' onClick={onClose}>Achievements</p></a>
-          <a href="#contact">   <p className='side' onClick={onClose}>Contact</p></a>
-                
-              
+
+              <Link to="home" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Home</Link>
+              <Link to="about" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >About</Link>
+              <Link to="skill" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Skills</Link>
+              <Link to="projects" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Projects</Link>
+              <Link to="github" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Github</Link>
+              <Link to="achievements" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Achievements</Link>
+              <Link to="contact" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Contact</Link>
+
             </Box>
           </DrawerBody>
         </DrawerContent>

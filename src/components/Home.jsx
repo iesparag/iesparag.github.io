@@ -1,7 +1,6 @@
 import { Box, Heading,Flex, Grid, Image} from '@chakra-ui/react';
 import React from 'react'
-// import Type from "../../Parts/type";
-// import { TypeDot } from "../../Parts/type";
+
 import Photo_for_tech from "../assets/Photo_for_tech.jpg"
 import Type from '../parts/Type';
 

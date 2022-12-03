@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Grid, Heading, Hide, Image, Show, Text } from '@chakra-ui/react'
+import { Box,  Flex,  Heading,  Image, Show, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const About = () => {
