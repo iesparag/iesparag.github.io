@@ -77,17 +77,23 @@ const Navbar = () => {
           <DrawerCloseButton border="2px solid #fb982f" bg="black" color="#fff" />
           <DrawerHeader ></DrawerHeader>
           <DrawerBody>
-          <Box  className='navbar_right' flexGrow="3"  >
+          <Box    className='navbar_right' flexGrow="3"  >
               <Button bg="black" as="a" href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"  className='side' download onClick={onClose} >RESUME &#8595;
               </Button>
 
-              <Link to="home" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Home</Link>
-              <Link to="about" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >About</Link>
-              <Link to="skill" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Skills</Link>
-              <Link to="projects" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Projects</Link>
-              <Link to="github" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Github</Link>
-              <Link to="achievements" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Achievements</Link>
-              <Link to="contact" className='side'  activeClass='active'  spy={true}    smooth={true} duration={2000} onClick={onClose}  >Contact</Link>
+              <Link to="home" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose}  className='side'>Home</p></Link>
+
+              <Link to="about" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>About</p></Link>
+
+              <Link to="skill" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>Skills</p></Link>
+
+              <Link to="projects" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side' >Projects</p></Link>
+
+              <Link to="github" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>Github</p></Link>
+
+              <Link to="achievements" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side' >Achievements</p></Link>
+
+              <Link to="contact" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>Contact</p></Link>
 
             </Box>
           </DrawerBody>
