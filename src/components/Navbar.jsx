@@ -85,6 +85,8 @@ const Navbar = () => {
 
               <Link to="about" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>About</p></Link>
 
+              <Link to="education" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>Education</p></Link>
+
               <Link to="skill" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side'>Skills</p></Link>
 
               <Link to="projects" duration={2000} onClick={onClose}    spy={true}    smooth={true}    ><p onClick={onClose} className='side' >Projects</p></Link>

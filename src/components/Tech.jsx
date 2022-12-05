@@ -21,10 +21,10 @@ const Tech = () => {
 
   return (
     <Box paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}} id="skill" >
-    <Box className='section-title' >
+        <Box className='section-title' >
         <Heading  opacity="0.5" as="h2"   size="2xl" >Tech Skill</Heading>
         </Box>
-    <Grid mb="100px"  templateColumns={{base: "1fr 1fr",sm:"1fr 1fr",md:"1fr 1fr 1fr",lg:"1fr 1fr 1fr 1fr"}} >
+    <Grid mb="100px"  templateColumns={{base: "1fr 1fr",sm:"1fr 1fr",md:"1fr 1fr 1fr",lg:"1fr 1fr 1fr 1fr 1fr"}} >
       {
         tech.map((tech)=> (
           <div className='cube' style={{margin:"70px auto"}} >

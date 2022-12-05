@@ -7,6 +7,7 @@ import Tech from './components/Tech';
 import { Box } from '@chakra-ui/react';
 import Education from './components/Education';
 import Softskill from './components/Softskill';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
         <Education/>
         <Tech/>
         <Softskill/>
+       
       </Box>
-     
+      <Contact/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import "./Education.css"
 const Education = () => {
   return (
     <Box id="education"   paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>      
-    <Box className='section-title' >
+        <Box className='section-title' >
            <Heading as="h2" opacity="0.5"  size="2xl" >Education Page</Heading>
         </Box>
    <Grid display="grid"  gridTemplateColumns={{sm:"1fr" ,md:"1fr" ,lg:'1.75fr 1fr' }} px="10px" >

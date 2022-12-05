@@ -31,7 +31,7 @@ const Softskill = () => {
                         </AccordionPanel>
                         <hr />
                         <AccordionPanel pb={4}>
-                        <b>Patience</b>
+                        <b>Communication</b>
                         
                         </AccordionPanel>
                         <hr />
