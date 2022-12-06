@@ -143,52 +143,72 @@ const Contact = () => {
                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                 shadow="base">
                 <VStack spacing={5}>
-                  <FormControl isRequired>
-                    <FormLabel>Name</FormLabel>
+                  <form  action="https://formspree.io/f/mknedrpa" method='POST'>
+                  
+                    <Box mb="10px">
+                    <FormLabel>Name</FormLabel>          
+                      
+                        <Input 
+                        focusBorderColor='#fb982f'
+                        type="text"
+                          name="name"
+                          placeholder="Your Name"  
+                        autoComplete='off'
+                        required
+                        />
+                    </Box>
+                   
+                 
 
-                    <InputGroup>
-                     
-                      <Input focusBorderColor='#fb982f' type="text" name="name" placeholder="Your Name" />
-                    </InputGroup>
-                  </FormControl>
-
-                  <FormControl isRequired>
+                  
+                    <Box mb="10px">
                     <FormLabel>Email</FormLabel>
 
-                    <InputGroup>
+                    
                      
-                      <Input
-                      focusBorderColor='#fb982f'
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                      />
-                    </InputGroup>
-                  </FormControl>
+                          <Input
+                          focusBorderColor='#fb982f'
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                          autoComplete='off'
 
-                  <FormControl isRequired>
+                          />
+                    </Box>
+                   
+                  
+
+                 
+                    <Box mb="10px">
                     <FormLabel>Message</FormLabel>
 
-                    <Textarea
-                    focusBorderColor='#fb982f'
-                      name="message"
-                      placeholder="Your Message"
-                      rows={6}
-                      resize="none"
-                    />
-                  </FormControl>
+                        <Textarea
+                        focusBorderColor='#fb982f'
+                          name="message"
+                          placeholder="Your Message"
+                          rows={6}
+                          resize="none"
+                          required
+                          autoComplete='off'
+                        />
+                    </Box>
+                 
 
-                  <Button
+                  <Box mb="10px"><Input
                     colorScheme="blue"
                     bg="#fb982f"
                     color="white"
+                    type="submit"
+                    fontWeight="bold"
+                    value="Send Message"
                     _hover={{
                       bg: '#fb982f',
                       color:"black"
                     }}
-                    isFullWidth>
-                    Send Message
-                  </Button>
+                    isFullWidth/></Box>
+                    
+                    </form>
                 </VStack>
               </Box>
             </Stack>

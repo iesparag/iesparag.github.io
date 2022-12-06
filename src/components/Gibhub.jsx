@@ -37,7 +37,7 @@ const Github = () => {
    
  
  
-  <Flex  flexDir='column' align='center' mt='10'>
+  <Flex  flexDir='column' align='center' >
     <Box border="3px solid #fb982f"  p="20px" borderRadius="15px" >
     <GitHubCalendar
       username="iesparag"

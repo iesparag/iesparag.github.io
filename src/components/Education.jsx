@@ -17,7 +17,7 @@ const Education = () => {
         <Box  className="qualification__sections" mt='10' >
 
     {/* <!--==================== QUALIFICATION CONTENT 1 ====================--> */}
-    <div className="qualification__content qualification__active" data-content id="education">
+    <div  m="auto" className="qualification__content qualification__active" data-content >
         {/* <!--==================== QUALIFICATION 1 ====================--> */}
         <div className="qualification__data">
             <div>
