@@ -1,17 +1,80 @@
-import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
+import { Box, Flex, Grid,  Image, Heading } from "@chakra-ui/react";
 
-const gibhub = () => {
+import GitHubCalendar from "react-github-calendar";
+
+const Github = () => {
+
+  const selectLastHalfYear = (contributions) => {
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    const shownMonths = 7;
+
+    return contributions.filter((day) => {
+      const date = new Date(day.date);
+      const monthOfDay = date.getMonth();
+
+      return (
+        date.getFullYear() === currentYear &&
+        monthOfDay > currentMonth - shownMonths &&
+        monthOfDay <= currentMonth
+      );
+    });
+  };
+
   return (
     <Box id='github' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         {/* heading section */}
         <Box className='section-title' >
-           <Heading as="h2" opacity="0.5"  size="2xl" >Education Page</Heading>
+           <Heading as="h2" opacity="0.5"  size="2xl" >Github Page</Heading>
         </Box>
         {/* main section */}
+
+        <Box  pt={{sm:'30px'}} w='full'  mt='50px' mb='25' id='Github' >
+    
+    
+    
+   
+ 
+ 
+  <Flex  flexDir='column' align='center' mt='10'>
+    <Box border="3px solid #fb982f"  p="20px" borderRadius="15px" >
+    <GitHubCalendar
+      username="iesparag"
+      transformData={selectLastHalfYear}  
+      color="#fb982f" 
+      
+
+      />
+    </Box>
+ 
+
+  <Grid
+     p='5'
+    m="16"
+    gap={{ base: "3", md: "10" }}
+    gridTemplateColumns={{ base: "1fr", lg: "repeat(3,1fr)" }}
+    width={{base:"100%",md:"auto"}}
+  >
+    
+
+    <Box>
+    <Image  src="https://streak-stats.demolab.com/?user=iesparag&theme=gruvbox&border_radius=15&date_format=M%20j%5B%2C%20Y%5D&color=fb982f" />
+    </Box>
+
+    <Box>
+    <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=iesparag&layout=compact&theme=gruvbox&border_radius=15&color=fb982f" />
+    </Box>
+
+    <Box>
+    <Image src="https://github-readme-stats.vercel.app/api?username=iesparag&count_private=true&theme=gruvbox&border_radius=15&color=fb982f" />
+    </Box>
+  </Grid>
+  </Flex>
+</Box>
         
     </Box>
   )
 }
 
-export default gibhub
+export default Github

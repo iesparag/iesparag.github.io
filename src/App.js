@@ -8,6 +8,8 @@ import { Box } from '@chakra-ui/react';
 import Education from './components/Education';
 import Softskill from './components/Softskill';
 import Contact from './components/Contact';
+import Achievements from './components/Achievements';
+import Github from './components/Gibhub';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Education/>
         <Tech/>
         <Softskill/>
+        <Github/>
+        <Achievements/>
        
       </Box>
       <Contact/>
