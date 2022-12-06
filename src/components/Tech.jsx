@@ -27,7 +27,7 @@ const Tech = () => {
     <Grid mb={{base:"70px",md:"100px"}}  templateColumns={{base: "1fr 1fr",sm:"1fr 1fr",md:"1fr 1fr 1fr",lg:"1fr 1fr 1fr 1fr 1fr"}} >
       {
         tech.map((tech)=> (
-          <div className='cube' style={{margin:"70px auto"}} >
+          <div className='cube' style={{margin:"50px auto"}} >
           <div className='top'  ></div>
             <div>
               {/* style="--i:0;" */}
