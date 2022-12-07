@@ -1,43 +1,75 @@
-import { Box, Heading ,Grid, Text} from '@chakra-ui/react'
+import { Box, Heading ,Grid, Text, Button, Flex} from '@chakra-ui/react'
 import React from 'react'
 import "./Projects.css"
-
+import kfc from "../assets/kfc.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const Projects = () => {
   return (
-    <div>
+    <Box id="projects" paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}} >
         {/* heading*/}
         <Box className='section-title' >
            <Heading opacity="0.5" as="h2"  size="2xl" >Projects</Heading>
         </Box>
         {/* below content */}
        <Box>
-        <Grid>
-        
-<Box  className="cards">
-  <Box  bg="yellow" className="card">
-    <h2 className="card-title">Seal</h2>
-    <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" / >
-    <p className="card-desc">Hawks are a group of medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and vary greatly in size.
-      The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing suddenly from a concealed perch.</p>
-  </Box>
-  <div className="card">
-    <h2 className="card-title">Lion</h2>
-    <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" / >
-    <Text bg="yellow" className="card-desc">The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane.</Text>
-  </div>
-  <div className="card">
-    <h2 className="card-title">Hawk</h2>
-    <img src="https://images.unsplash.com/photo-1534251369789-5067c8b8602a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""/>
-    <p className="card-desc">Hawks are a group of medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and vary greatly in size.
-      The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing suddenly from a concealed perch.</p>
-  </div>
-</Box>
+        <Grid display="grid" m="auto" gridTemplateColumns={{base:"1fr",md:"1fr 1fr",lg:"1fr 1fr 1fr"}} flex-wrap="wrap" rowGap={10} columnGap={10}  justifyContent="space-around"  >
+              {/* 1 */}
+              <Box data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000"  className="card">
+                <h2 className="card-title">K F C ( Clone )</h2>
+                <img   src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1488265976/k2htrr9z4vsxkjbthskk.png" alt="kfc" / >
+                <Box className="card-desc">
+                <p marginBottom="10px" >KFC is a fast food brand specializing in chicken.deliver more than 700 food Item  </p>
+                <Heading size="md" margin="10px auto" opacity=".5"  >Tech Stack</Heading>
+                <b margin="10px auto" >React | Vercel | currency bundler Package |</b>
+                <b><li>Fully Responsive</li></b>
+                
+                <Flex justifyContent="space-between" mt="20px" >
+                <a href="https://github.com/iesparag/iesparag-joyful-horses-61/tree/main/kfc-clone-by-iesparag" target="_blank"><button className='btn_pill' >Github</button></a>
+                <a href="https://kfc-clone-by-iesparag.vercel.app/" target="_blank"><button className='btn_pill' >Website</button></a>
+                </Flex>
+                </Box>
+              </Box>
+              {/* 2 */}
+              <Box data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000" className="card">
+                <h2 className="card-title">K E T T O ( Clone )</h2>
+                <img src="https://aniportalimages.s3.amazonaws.com/media/details/unnamed_6_BRxDyWA_TUBksxH.jpg" alt="ketto" / >
+                <Box className="card-desc">
+                <p marginBottom="10px" >Ketto is an Online Crowdfunding Platform and Website in India for fundraising of Social, Charity, Personal issue.</p>
+                <Heading size="md" margin="10px auto" opacity=".5"  >Tech Stack</Heading>
+                <b margin="10px auto" >HTML 5 | Css | Java Script | Json-Server | </b>
+                {/* <Heading size="sm" margin="10px auto" opacity=".5"  >Features</Heading>
+                <p margin="10px auto" >login-Signup | sorting | search  | payment | </p> */}
+                
+                <Flex justifyContent="space-between" mt="20px" >
+                <a href="https://github.com/rakesh7063/versed-substance-8213" target="_blank"><button className='btn_pill' >Github</button></a>
+                <a href="https://ketto-official-clone.netlify.app/" target="_blank"><button className='btn_pill' >Website</button></a>
+                </Flex>
+                </Box>
+              </Box>
+              {/* 3 */}
+              <Box data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000" className="card">
+                <h2 className="card-title">R E N T O M O Z O ( Clone )</h2>
+                <img src="https://rukminim1.flixcart.com/image/416/416/l44hyfk0/sofa-sectional/y/b/z/symmetrical-80-lilac-lavendor-purple-203-polyester-40-original-imagf38spwtctyf3.jpeg?q=70" alt="rentomozo"/>
+                <Box className="card-desc">
+                <p marginBottom="10px" >Rentomojo is an online rental solution for all the furnishing needs including furniture, furnishings, home appliances, and bikes.</p>
+                <Heading size="md" margin="10px auto" opacity=".5"  >Tech Stack</Heading>
+                <b margin="10px auto" >HTML 5 | Css | Java Script | Bootstrap</b>
+                
+                <Flex justifyContent="space-between" mt="20px" >
+                <a href="https://github.com/pratiksontakke/prompt-advertisement-8166" target="_blank"><button className='btn_pill' >Github</button></a>
+                <a href="https://jovial-dusk-c6ab4b.netlify.app/" target="_blank"><button className='btn_pill' >Website</button></a>
+                </Flex>
+                </Box>
+                
+              </Box>
         </Grid>
        </Box>
 
 
-    </div>
+    </Box>
   )
 }
 
