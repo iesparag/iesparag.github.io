@@ -1,5 +1,8 @@
 import { Box,  Flex,  Heading,  Image, Show, Text } from '@chakra-ui/react'
 import React from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const About = () => {
   return (
@@ -19,11 +22,11 @@ const About = () => {
              <Show above="md">
              
                  <Flex>
-                  <Image m="auto" width={{md:"100%",lg:"50%"}} src="https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/02/regurly-img.gif" bg="#202124" alt="coder_gif" />
+                  <Image  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1500" m="auto" width={{md:"100%",lg:"50%"}} src="https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/02/regurly-img.gif" bg="#202124" alt="coder_gif" />
                  </Flex>
               
              </Show>
-              <Box fontSize={{base:"auto",md:"18px"}} letterSpacing="1px" width={{base:"100%",md:"50%"}} p="10px"    >
+              <Box data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="1500" fontSize={{base:"auto",md:"18px"}} letterSpacing="1px" width={{base:"100%",md:"50%"}} p="10px"    >
                     <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Email Address : <a  href="mailto:iesparagjain@gmail.com"><span> iesparagjain@gmail.com</span></a>
                     </Text>

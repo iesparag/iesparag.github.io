@@ -2,27 +2,24 @@ import {
     Box,
     Button,
     Flex,
-    FormControl,
     FormLabel,
     Heading,
     IconButton,
     Input,
-    InputGroup,
-    InputLeftElement,
     Link,
     Stack,
     Textarea,
-    Tooltip,
     useClipboard,
     useColorModeValue,
     VStack,
   } from '@chakra-ui/react';
   import React from 'react';
-  import { BsGithub, BsLinkedin, BsPerson, BsPhone, BsTwitter, BsWhatsapp } from 'react-icons/bs';
-  import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+  import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
   import { PhoneIcon } from '@chakra-ui/icons'
   import "./contact.css"
-
+  import AOS from 'aos';
+  import 'aos/dist/aos.css'; 
+  AOS.init();
 
   
 
@@ -54,7 +51,7 @@ const Contact = () => {
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}>
-              <Stack
+              <Stack data-aos="slide-right" data-aos-duration="2000" 
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}>
@@ -136,7 +133,7 @@ const Contact = () => {
                 </Link>
               </Stack>
 
-              <Box
+              <Box data-aos="slide-left" data-aos-duration="2000" 
                 // bg={useColorModeValue('white', 'gray.700')}
                 borderRadius="lg"
                 p={8}
@@ -195,20 +192,22 @@ const Contact = () => {
                     </Box>
                  
 
-                    <Box mt="10px" as={Button} class="button-82-pushable" type="submit">
+                    {/* <Box mt="10px" as={Button} class="button-82-pushable" type="submit">
                       <span class="button-82-shadow"></span>
                       <span class="button-82-edge"></span>
                       <span class="button-82-front text">
                         Send 
                       </span>
-                    </Box>
+                    </Box> */}
 
 
 
-                  {/* <Box mb="10px"><Input
+                  <Box mb="10px"><Input
+                  opacity="0.75"
                     colorScheme="blue"
+                    letterSpacing="1px"
                     bg="#fb982f"
-                    color="white"
+                    color="black"
                     type="submit"
                     fontWeight="bold"
                     value="Send Message"
@@ -216,7 +215,7 @@ const Contact = () => {
                       bg: '#fb982f',
                       color:"black"
                     }}
-                    isFullWidth/></Box> */}
+                    isFullWidth/></Box>
                     
                     </form>
                 </VStack>
