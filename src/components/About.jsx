@@ -23,30 +23,30 @@ const About = () => {
                  </Flex>
               
              </Show>
-              <Box  width={{base:"100%",md:"50%"}} p="10px"    >
-                    <Text mb="10px" fontWeight="bold" >
+              <Box fontSize={{base:"auto",md:"18px"}} letterSpacing="1px" width={{base:"100%",md:"50%"}} p="10px"    >
+                    <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Email Address : <a  href="mailto:iesparagjain@gmail.com"><span> iesparagjain@gmail.com</span></a>
                     </Text>
                     
-                    <Text mb="10px" fontWeight="bold" >
+                    <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Phone Number : <a    href="tel:9770525851"><span> 9770525851</span></a>
                     </Text>
                     
-                    <Text mb="10px" fontWeight="bold" >
+                    <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Location : <span> Sagar M.P</span>
                     </Text>
                     
-                    <Text mb="10px" fontWeight="bold" >
+                    <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Degree : <span> B.Tech (Civil Engineer)</span>
                     </Text>
                     
-                    <Text mb="10px" fontWeight="bold" >LinkedIn:
+                    <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >LinkedIn:
                           <a  href="https://www.linkedin.com/in/iesparag/"
                            > <span> Linkdin</span> </a
                           >
                     </Text>
                      
-                    <Text fontWeight="bold" >GitHub :
+                    <Text fontWeight={{base:"auto",md:"semibold"}} >GitHub :
                        <a href="https://github.com/iesparag"
                             ><span> https://github.com/iesparag</span></a
                           >

@@ -4,29 +4,55 @@ import Ncc from "../assets/N.C.C_certificate .jpg"
 // import masai_PP from "../assets/masai_power_project_award.pdf"
 import Goi from "../assets/GOI.jpg"
 import Headquarter from "../assets/Headquarters_Certificate.jpg"
+import masai from "../assets/masai_award.jpg"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const Achievements = () => {
-    
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        autoplay: true,
+      autoplaySpeed: 2000,
+      };
   return (
     <Box id='achievements' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         <Box className='section-title' >
            <Heading opacity="0.5" as="h2"  size="2xl" >Achievements Page</Heading>
         </Box>
         {/* below content */}
-        <Grid justifyContent="center" margin="auto" gridTemplateColumns={{base:"1fr",md:"1fr 1fr",lg:"1fr 1fr 1fr"}} gap="20px" >
-            <Box w="250px" h="250px" margin="auto" >
-                <a href="https://drive.google.com/file/d/1etftm3BrlqTQ0VkxeUVarMhIeegDfnIt/view?usp=sharing" ><Image src={Ncc} alt="image" h="100%" w="100%" /></a>
-            </Box>
-            <Box w="250px" h="250px" margin="auto">
-                <a href="https://drive.google.com/file/d/1ex1cLaBA2jjXgTmfeoYMw8rJYbonnRFC/view?usp=sharing"><Image src={Headquarter} alt="image" h="100%" w="100%" /></a>
-            </Box>
-            <Box w="250px" h="250px" margin="auto">
-                <a href="https://drive.google.com/file/d/1f29S7zmlM23z6TWop0kw_bl1Bf5VBqOb/view?usp=sharing"  ><Image src={Goi} alt="image" h="100%" w="100%" /></a>
-            </Box>
-            {/* <Box>
-                <Image src={} alt="image" />
-            </Box> */}
-        </Grid>
+        
+         <Box justifyContent="center" alignItems="center" w={{base:"80vw",md:"60vw",lg:"40vw"}} m="auto">
+         <Slider {...settings}>
+         <div>
+      <Box m="auto"  h="350px" ><Image src={masai} alt="image" w="100%" h="100%"  /></Box>
+      </div>
+      <div >
+        <Box m="auto"  h="350px" ><Image src={Ncc} alt="image" w="100%" h="100%" /></Box>
+      </div>
+      <div>
+      <Box m="auto" h="350px" ><Image src={Headquarter} alt="image" w="100%" h="100%" /></Box>
+        
+      </div>
+      <div>
+      <Box m="auto" h="350px" ><Image src={Goi} alt="image" w="100%" h="100%" /></Box>
+
+      </div>
+      
+      {/* <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div> */}
+    </Slider>
+         </Box>
 
     </Box>
   )

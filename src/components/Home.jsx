@@ -20,7 +20,7 @@ const Home = () => {
             
             <Heading my="20px" as="h1" size="lg" ><Type/></Heading>
           </Flex>
-          <Heading as="h1" size="lg" lineHeight="50px" my="30px">Great web <span>Designer</span> without functionality is like a sports car with no <span>Engine...</span></Heading>
+          <Heading as="h1" lineHeight="50px" size={{base:"md",md:"lg"}}  my="30px">Great web <span>Designer</span> without functionality is like a sports car with no <span>Engine...</span></Heading>
           </Box>
         
         

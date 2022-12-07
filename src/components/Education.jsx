@@ -7,13 +7,12 @@ const Education = () => {
   return (
     <Box id="education"   paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>      
         <Box className='section-title' >
-           <Heading as="h2" opacity="0.5"  size="2xl" >Education Page</Heading>
+           <Heading as="h2" opacity="0.5"  size="2xl"  >Education Page</Heading>
         </Box>
    <Grid display="grid"  gridTemplateColumns={{sm:"1fr" ,md:"1fr" ,lg:'1.75fr 1fr' }} px="10px" >
          
          {/* right Box */}
         <Box  fontWeight={{base:"auto",md:"bold"}} className="details"  width={{base:"100%",md:"100%",lg:"100%"}} m="auto">
-        
         <Box  className="qualification__sections" mt='10' >
 
     {/* <!--==================== QUALIFICATION CONTENT 1 ====================--> */}

@@ -21,7 +21,7 @@ import {
   import { BsGithub, BsLinkedin, BsPerson, BsPhone, BsTwitter, BsWhatsapp } from 'react-icons/bs';
   import { MdEmail, MdOutlineEmail } from 'react-icons/md';
   import { PhoneIcon } from '@chakra-ui/icons'
-
+  import "./contact.css"
 
 
   
@@ -195,7 +195,17 @@ const Contact = () => {
                     </Box>
                  
 
-                  <Box mb="10px"><Input
+                    <Box mt="10px" as={Button} class="button-82-pushable" type="submit">
+                      <span class="button-82-shadow"></span>
+                      <span class="button-82-edge"></span>
+                      <span class="button-82-front text">
+                        Send 
+                      </span>
+                    </Box>
+
+
+
+                  {/* <Box mb="10px"><Input
                     colorScheme="blue"
                     bg="#fb982f"
                     color="white"
@@ -206,7 +216,7 @@ const Contact = () => {
                       bg: '#fb982f',
                       color:"black"
                     }}
-                    isFullWidth/></Box>
+                    isFullWidth/></Box> */}
                     
                     </form>
                 </VStack>

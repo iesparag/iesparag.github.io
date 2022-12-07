@@ -38,11 +38,13 @@ const Github = () => {
  
  
   <Flex  flexDir='column' align='center' >
-    <Box border="3px solid #fb982f"  p="20px" borderRadius="15px" >
+    <Box border="2px solid #fb982f"   p="20px" borderRadius="10px" >
     <GitHubCalendar
       username="iesparag"
       transformData={selectLastHalfYear}  
       color="#fb982f" 
+      width="90vw"
+      
       
 
       />
