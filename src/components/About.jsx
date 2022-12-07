@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Box paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}   id='about' >
         <Box className='section-title' >
-           <Heading opacity="0.5" as="h2"  size="2xl" >About Page</Heading>
+           <Heading opacity="0.5" as="h2"  size="2xl" >About</Heading>
         </Box>
         {/* below content start */}
          <Box px="10px"  >

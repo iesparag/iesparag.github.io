@@ -29,7 +29,7 @@ const Contact = () => {
     <Box id='contact' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         {/* heading section */}
         <Box px={{base:"10px",md:"80px",lg:"100px" }} className='section-title' >
-           <Heading as="h2" opacity="0.5"  size="2xl" >Contact Page</Heading>
+           <Heading as="h2" opacity="0.5"  size="2xl" >Contact</Heading>
         </Box>
         {/* main section */}
        

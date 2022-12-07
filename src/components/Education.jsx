@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <Box id="education"    paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>      
         <Box className='section-title' >
-           <Heading as="h2" opacity="0.5"  size="2xl"  >Education Page</Heading>
+           <Heading as="h2" opacity="0.5"  size="2xl"  >Education</Heading>
         </Box>
     <Box   >    
    <Grid fontSize={{base:"14px",sm:"16px"}} letterSpacing="1px"  px={{base:"2px",md:"auto"}}  display="grid"   gridTemplateColumns={{base:"1fr",sm:"1fr" ,md:"1fr" ,lg:'1.5fr 1fr' }}   >

@@ -24,7 +24,7 @@ const Achievements = () => {
   return (
     <Box id='achievements' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         <Box className='section-title' >
-           <Heading opacity="0.5" as="h2"  size="2xl" >Achievements Page</Heading>
+           <Heading opacity="0.5" as="h2"  size="2xl" >Achievements</Heading>
         </Box>
         {/* below content */}
         

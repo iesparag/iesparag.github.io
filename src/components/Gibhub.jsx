@@ -26,7 +26,7 @@ const Github = () => {
     <Box id='github' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         {/* heading section */}
         <Box className='section-title' >
-           <Heading as="h2" opacity="0.5"  size="2xl" >Github Page</Heading>
+           <Heading as="h2" opacity="0.5"  size="2xl" >Github</Heading>
         </Box>
         {/* main section */}
 
