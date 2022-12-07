@@ -26,7 +26,7 @@ const About = () => {
                  </Flex>
               
              </Show>
-              <Box data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-duration="1500" fontSize={{base:"auto",md:"18px"}} letterSpacing="1px" width={{base:"100%",md:"50%"}} p="10px"    >
+              <Box  letterSpacing="1px" width={{base:"100%",md:"50%"}} p="10px"    >
                     <Text mb="10px" fontWeight={{base:"auto",md:"semibold"}} >
                       Email Address : <a  href="mailto:iesparagjain@gmail.com"><span> iesparagjain@gmail.com</span></a>
                     </Text>

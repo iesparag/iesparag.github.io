@@ -32,8 +32,8 @@ const Navbar = () => {
   return (
     
     <Box   className='navbar'    >
-        <Box    zIndex="100"  display="block"  position="fixed" top="0" justifyContent="space-evenly" width="100vw" >
-        <Box     justifyContent={{base:"space-between",md:"space-between"}} id='navbar' className='navbar_conatiner' display="flex" alignItems="center" boxShadow="dark-lg"  padding="10px" >
+        <Box   zIndex={20} bg="#202124"   display="block"  position="fixed" top="0" justifyContent="space-evenly" width="100vw" >
+        <Box   zIndex={20} bg="#202124"  justifyContent={{base:"space-between",md:"space-between"}} id='navbar' className='navbar_conatiner' display="flex" alignItems="center" boxShadow="dark-lg"  padding="10px" >
           <Hide below="base" >
             <Box alignItems="center"  className='navbar_left'>
                 <Link to="home" activeClass='active'  spy={true}    smooth={true} duration={2000} ><Heading as="h1" size="2xl" letterSpacing="2px" >PARAG</Heading></Link>

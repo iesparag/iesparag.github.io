@@ -12,7 +12,7 @@ const Softskill = () => {
    
   return (
     <Box  m="auto"  marginBottom="30px" >
-         <Grid gap={5}  m="auto" gridTemplateColumns={{base:"1fr 1fr",md:"1fr 1fr",lg:"1fr 1fr"}} >
+         <Grid gap={{base:"1",md:"5"}}  m="auto" gridTemplateColumns={{base:"1fr 1fr",md:"1fr 1fr",lg:"1fr 1fr"}} >
         <Box m="auto"  >
             <Accordion allowToggle w={{base:"auto",md:"200px",lg:"400px"}} >
                 <AccordionItem>

@@ -46,12 +46,11 @@ const Contact = () => {
         px={{ base: 5, lg: 16 }}>
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
-           
 
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}>
-              <Stack data-aos="slide-right" data-aos-duration="2000" 
+              <Stack  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="3000"
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}>
@@ -133,7 +132,7 @@ const Contact = () => {
                 </Link>
               </Stack>
 
-              <Box data-aos="slide-left" data-aos-duration="2000" 
+              <Box 
                 // bg={useColorModeValue('white', 'gray.700')}
                 borderRadius="lg"
                 p={8}

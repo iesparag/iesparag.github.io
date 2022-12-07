@@ -10,6 +10,7 @@ import Softskill from './components/Softskill';
 import Contact from './components/Contact';
 import Achievements from './components/Achievements';
 import Github from './components/Gibhub';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -17,11 +18,13 @@ function App() {
     <div  >
       <Navbar />
       <Home/>
-      <Box px={{base:"10px",md:"80px",lg:"100px" }} >
+      
+      <Box paddingLeft={{base:"10px",md:"80px",lg:"100px" }}  paddingRight={{base:"10px",md:"80px",lg:"100px" }} >
         <About/>
-        <Education/>
+        <Education  />
         <Tech/>
         <Softskill/>
+        <Projects/>
         <Github/>
         <Achievements/>
        

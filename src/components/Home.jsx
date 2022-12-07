@@ -9,7 +9,7 @@ import Type from '../parts/Type';
 const Home = () => {
   return (
    <Box  id='home' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}} >
-      <Grid mt="20px" alignItems="center" justifyContent="space-around" px={{base:"20px",md:"100px",lg:"250px" }} gap={10}   gridTemplateColumns={{md:"1.5fr 1fr"}} >
+      <Grid mt="20px" alignItems="center" justifyContent="space-around" px={{base:"20px",md:"80px",lg:"150px" }} gap={10}   gridTemplateColumns={{md:"1.5fr 1fr"}} >
        
        
           <Box    >
@@ -26,7 +26,7 @@ const Home = () => {
         
         
         <Flex  m={{base:"auto"}}      justifyContent="center"   >
-           <Image  boxShadow="base" borderRadius="50%"  border="5px solid #fb982f"  src={Photo_for_tech} alt="profile_pic" />
+           <Image width="80%" boxShadow="base" borderRadius="50%"  border="5px solid #fb982f"  src={Photo_for_tech} alt="profile_pic" />
         </Flex>
         
       </Grid>
