@@ -65,7 +65,7 @@ const Education = () => {
                             <span className="qualification__subtitle">St. Joseph's convent Sr. Sec School</span>
                             <div className="qualification__celendar"  >
                             <CalendarIcon marginRight="7px" />
-                                2016 - 2017
+                                2012 - 2014
                             </div>
                         </div>
 
