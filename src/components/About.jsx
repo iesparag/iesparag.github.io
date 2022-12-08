@@ -11,9 +11,13 @@ const About = () => {
            <Heading opacity="0.5" as="h2"  size="2xl" >About</Heading>
         </Box>
         {/* below content start */}
+        
          <Box px="10px"  >
-         <Box m="auto"   >
-          <Heading as="h1" mb="15px" size={{base:"lg",md:"xl"}} >I'm Parag jain and <span>Full Stack Web Developer</span></Heading>
+         
+          
+         <Box    >
+          <Heading letterSpacing="2px" as="h2" mb="15px" size={{base:"md",md:"xl"}} >I'm Parag jain</Heading> 
+          <Heading as="h2" mb="15px" size={{base:"md",md:"xl"}} ><span>Full Stack Web Developer</span></Heading> 
           
           <Box  px={{base:"15px",md:"50px",lg:"100px"}} lineHeight={{base:"30px",md:"40px"}} as="h4"  size={{base:"18px",md:"md"}}  letterSpacing="1.5px"   >Enthusiastic and well-organized Full Stack Web Developer with <span>2500+ hours</span> of rigorous <span>coding experience</span>. Curious to learn about  emerging web technologies. Eager to join, to bring in top-class  Full Stack Web Development and <span> problem-solving skills</span>.</Box>
           

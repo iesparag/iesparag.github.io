@@ -1,4 +1,4 @@
-import { Box, Heading,Grid,Image, Hide, Center,  } from '@chakra-ui/react'
+import { Box, Heading,Grid,Image, Hide,   } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
 import React from 'react'
 import "./Education.css"

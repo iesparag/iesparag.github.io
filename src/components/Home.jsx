@@ -13,7 +13,7 @@ const Home = () => {
        
        
           <Box    >
-          <Flex     >
+          <Flex    >
             
             <Heading as="h1" size="xl" >Parag Jain...</Heading>
           </Flex>
@@ -21,7 +21,7 @@ const Home = () => {
             
             <Heading my="20px" as="h1" size="lg" ><Type/></Heading>
           </Flex>
-          <Heading as="h2"  size={{base:"md",md:"lg"}} lineHeight="50px"  my="30px">Great web <span>Designer</span> without functionality is like a sports car with no <span>Engine...</span></Heading>
+          <Heading as="h2"   size={{base:"md",md:"lg"}}     my="30px" >Great web <span>Designer</span> without functionality is like a sports car with  <span>no Engine...</span></Heading>
           </Box>
         
         
