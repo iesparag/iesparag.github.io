@@ -14,9 +14,9 @@ const Projects = () => {
            <Heading opacity="0.5" as="h2"  size="2xl" >Projects</Heading>
         </Box>
         {/* below content */}
-       <Box m="auto" w="75vw"
+       <Box m="auto" w="auto" justifyContent="center"
        data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1500"  >
-        <Grid display="grid" m="auto" gridTemplateColumns={{base:"1fr",md:"1fr 1fr",lg:"1fr 1fr 1fr"}} flex-wrap="wrap"    justifyContent="space-around"   >
+        <Grid display="grid"  gridTemplateColumns={{base:"1fr",md:"1fr 1fr",lg:"1fr 1fr 1fr"}} flex-wrap="wrap"    justifyContent="space-evenly" rowGap={10}  >
               {/* 1 */}
               <Box   className="card">
                 <h2 className="card-title">K F C ( Clone )</h2>

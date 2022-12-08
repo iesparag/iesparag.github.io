@@ -7,19 +7,14 @@
 
 
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
-}
+
 
 .card {
   margin: 20px;
   position: relative;
-  max-width: 250px; 
+  /* max-width: 250px;  */
   /* 250 */
-  width: 250px;
+  /* width: 250px; */
   height: 350px;
   max-height: 350px;
   box-shadow: 0 40px 60px -6px black;

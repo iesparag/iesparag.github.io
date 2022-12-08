@@ -50,7 +50,7 @@ const Contact = () => {
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}>
-              <Stack  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="3000"
+              <Stack  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000"
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}>
