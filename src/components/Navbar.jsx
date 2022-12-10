@@ -9,7 +9,8 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from '@chakra-ui/react'
-import React from 'react'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import React, { useState } from 'react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import "./Navbar.css"
 import { Link } from 'react-scroll'
@@ -39,6 +40,7 @@ const Navbar = () => {
                 <Link to="home" activeClass='active'  spy={true}    smooth={true} duration={2000} ><Heading as="h1" size="2xl" letterSpacing="2px" >PARAG</Heading></Link>
             </Box>
             </Hide>
+            
             <Hide below="md">
             <Box  className='navbar_right' flexGrow="3"  >
                <Flex alignItems="center" justifyContent='space-evenly'>
@@ -56,14 +58,10 @@ const Navbar = () => {
 
                 <Link to="contact" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Contact</Link>
                 
-                  
-                  
-                  
-
-
                 
                 <button className='btn_pill' ><a   href="https://drive.google.com/uc?id=1aP-AGJxtXnLABlQ98f3C9eUCpOxpYnUo&export=download"   download  >RESUME &#8595;
               </a></button>
+             
                </Flex>
             </Box>
             </Hide>

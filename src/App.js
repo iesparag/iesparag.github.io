@@ -11,12 +11,13 @@ import Contact from './components/Contact';
 import Achievements from './components/Achievements';
 import Github from './components/Gibhub';
 import Projects from './components/Projects';
+import { useState } from 'react';
 
 function App() {
-
+  
   return (
     <div  >
-      <Navbar />
+      <Navbar  />
       <Home/>
       
       <Box paddingLeft={{base:"10px",md:"80px",lg:"100px" }}  paddingRight={{base:"10px",md:"80px",lg:"100px" }} >

@@ -13,10 +13,12 @@ import {
     useColorModeValue,
     VStack,
   } from '@chakra-ui/react';
-  import React from 'react';
+  import { useToast } from '@chakra-ui/react'
+  import React, { useRef, useState } from 'react';
   import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
   import { PhoneIcon } from '@chakra-ui/icons'
   import "./contact.css"
+  import emailjs from '@emailjs/browser';
   import AOS from 'aos';
   import 'aos/dist/aos.css'; 
   AOS.init();
@@ -25,6 +27,50 @@ import {
 
 const Contact = () => {
     const { hasCopied, onCopy } = useClipboard('iesparagjain@gmail.com');
+    const toast = useToast()
+
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [message,setMessage] = useState("");
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_cttwct8', 'template_fbhj1bi', form.current, 'WWNKds33SpcnjkE0Y')
+        .then((result) => {
+            console.log(result.text);
+            console.log("message sent")
+            toast({
+              title: 'E-mail',
+              description: "E-mail sent successfully..",
+              status: 'success',
+              position: "top-right",
+              duration: 4000,
+              isClosable: true,
+             
+            })
+            setName("")
+            setEmail("")
+            setMessage("")
+            
+
+        }, (error) => {
+            console.log(error.text);
+            toast({
+
+              title: `Please enter correct detail`,
+              status: error,
+              position: "top-right",
+              duration:4000,
+              isClosable: true,
+            })
+        });
+        
+    };
+  
+
   return (
     <Box id='contact' paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
         {/* heading section */}
@@ -139,15 +185,17 @@ const Contact = () => {
                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                 shadow="base">
                 <VStack spacing={5}>
-                  <form  action="https://formspree.io/f/mknedrpa" method='POST'>
+                  <form  ref={form} onSubmit={sendEmail}>
                   
                     <Box mb="10px">
                     <FormLabel>Name</FormLabel>          
                       
                         <Input 
                         focusBorderColor='#fb982f'
+                        value={name}
+                        onChange={(e)=> setName(e.target.value)}
                         type="text"
-                          name="name"
+                          name="user_name"
                           placeholder="Your Name"  
                         autoComplete='off'
                         required
@@ -165,7 +213,9 @@ const Contact = () => {
                           <Input
                           focusBorderColor='#fb982f'
                             type="email"
-                            name="email"
+                            value={email}
+                        onChange={(e)=> setEmail(e.target.value)}
+                            name="user_email"
                             placeholder="Your Email"
                             required
                           autoComplete='off'
@@ -182,6 +232,8 @@ const Contact = () => {
                         <Textarea
                         focusBorderColor='#fb982f'
                           name="message"
+                          value={message}
+                        onChange={(e)=> setMessage(e.target.value)}
                           placeholder="Your Message"
                           rows={6}
                           resize="none"
