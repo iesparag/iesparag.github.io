@@ -50,6 +50,8 @@ const Navbar = () => {
                 
                 <Link to="about" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >About</Link>
 
+                <Link to="education" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Education</Link>
+
                 <Link to="skill" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Skills</Link>
 
                 <Link to="projects" className='a-tag'  activeClass='active'  spy={true}    smooth={true} duration={2000}  >Projects</Link>
