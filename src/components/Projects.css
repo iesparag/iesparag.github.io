@@ -1,22 +1,15 @@
 
 
 
-
-
-
-
-
-
-
-
 .card {
   margin: 20px;
   position: relative;
+
   /* max-width: 250px;  */
   /* 250 */
   /* width: 250px; */
-  height: 350px;
-  max-height: 350px;
+  /* height: 350px;
+  max-height: 350px; */
   box-shadow: 0 40px 60px -6px black;
 }
 
@@ -36,14 +29,15 @@
 
 .card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%; */
+  height: 250px;
+  /* object-fit: contain; */
   display: block;
   position: relative;
   
 }
 
-.card-desc {
+/* .card-desc {
   display: block;
   font-size: 1.2rem;
   position: absolute;
@@ -60,7 +54,7 @@
 .card:hover .card-desc {
   opacity: 1;
   height: 100%;
-}
+} */
 
 h1 {
   font-size: 2.8rem;

@@ -13,6 +13,7 @@ const Github = () => {
     return contributions.filter((day) => {
       const date = new Date(day.date);
       const monthOfDay = date.getMonth();
+      
 
       return (
         date.getFullYear() === currentYear &&
