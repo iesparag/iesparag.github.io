@@ -6,9 +6,9 @@ import GitHubCalendar from "react-github-calendar";
 const Github = () => {
 
   const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear() || "last";
     const currentMonth = new Date().getMonth();
-    const shownMonths = 7;
+    const shownMonths = 12;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
@@ -16,8 +16,8 @@ const Github = () => {
       
 
       return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
+        date.getFullYear() === currentYear ||
+        monthOfDay > currentMonth - shownMonths ||
         monthOfDay <= currentMonth
       );
     });
