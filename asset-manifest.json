@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/iesparag.github.io/static/css/main.a9c0982c.css",
-    "main.js": "/iesparag.github.io/static/js/main.0dbc2245.js",
-    "static/js/787.d40d1f79.chunk.js": "/iesparag.github.io/static/js/787.d40d1f79.chunk.js",
-    "static/media/Headquarters_Certificate.jpg": "/iesparag.github.io/static/media/Headquarters_Certificate.07bc3ae472fa55e608e5.jpg",
-    "static/media/N.C.C_certificate .jpg": "/iesparag.github.io/static/media/N.C.C_certificate .ab9b0e5267dba67177d7.jpg",
-    "static/media/GOI.jpg": "/iesparag.github.io/static/media/GOI.6b39cc7332dd4b9e1e31.jpg",
-    "static/media/masai_award.jpg": "/iesparag.github.io/static/media/masai_award.988d2dfe01c09ace8e44.jpg",
-    "static/media/bootstrap.png": "/iesparag.github.io/static/media/bootstrap.62f9fb3fe720440052f4.png",
-    "static/media/figma.png": "/iesparag.github.io/static/media/figma.fc2bfc592455c88cf223.png",
-    "static/media/Photo_for_tech.jpg": "/iesparag.github.io/static/media/Photo_for_tech.520aa314633abd602bd6.jpg",
-    "static/media/slick.svg": "/iesparag.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/iesparag.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/iesparag.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/iesparag.github.io/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/iesparag.github.io/index.html",
-    "main.a9c0982c.css.map": "/iesparag.github.io/static/css/main.a9c0982c.css.map",
-    "main.0dbc2245.js.map": "/iesparag.github.io/static/js/main.0dbc2245.js.map",
-    "787.d40d1f79.chunk.js.map": "/iesparag.github.io/static/js/787.d40d1f79.chunk.js.map"
+    "main.css": "/static/css/main.b77f85a0.css",
+    "main.js": "/static/js/main.e88321c0.js",
+    "static/js/787.d40d1f79.chunk.js": "/static/js/787.d40d1f79.chunk.js",
+    "static/media/Headquarters_Certificate.jpg": "/static/media/Headquarters_Certificate.07bc3ae472fa55e608e5.jpg",
+    "static/media/N.C.C_certificate .jpg": "/static/media/N.C.C_certificate .ab9b0e5267dba67177d7.jpg",
+    "static/media/GOI.jpg": "/static/media/GOI.6b39cc7332dd4b9e1e31.jpg",
+    "static/media/masai_award.jpg": "/static/media/masai_award.988d2dfe01c09ace8e44.jpg",
+    "static/media/bootstrap.png": "/static/media/bootstrap.62f9fb3fe720440052f4.png",
+    "static/media/figma.png": "/static/media/figma.fc2bfc592455c88cf223.png",
+    "static/media/Photo_for_tech.jpg": "/static/media/Photo_for_tech.520aa314633abd602bd6.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.b77f85a0.css.map": "/static/css/main.b77f85a0.css.map",
+    "main.e88321c0.js.map": "/static/js/main.e88321c0.js.map",
+    "787.d40d1f79.chunk.js.map": "/static/js/787.d40d1f79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9c0982c.css",
-    "static/js/main.0dbc2245.js"
+    "static/css/main.b77f85a0.css",
+    "static/js/main.e88321c0.js"
   ]
 }
