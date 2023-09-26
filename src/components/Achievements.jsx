@@ -9,40 +9,63 @@ import bootstrap from "../assets/bootstrap.png"
 import "./Achievements.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import {  Pagination } from 'swiper/modules';
+import 'swiper/css/navigation'
+import {  Autoplay, Pagination,Navigation,Scrollbar } from 'swiper/modules';
+
+
+
 
 
 const Achievements = () => {
-  
-  return (
-    // effect={'coverflow'}
-    // grabCursor={true}
-    // centeredSlides={true}
-    // slidesPerView={5}
-    // slidesPerGroup={1}
-    // coverflowEffect={{
-    //   rotate: 50,
-    //   stretch: 0,
-    //   depth: 100,
-    //   modifier: 4,
-    //   slideShadows: true,
-    // }}
-    // pagination={true}
-    // modules={[Pagination]}
-    // className="mySwiper"
 
+
+  const swiperBreakpoints = {
+    // When window width is >= 320px
+    240: {
+      slidesPerView: 1,
+    },
+    // When window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+    // When window width is >= 992px
+    992: {
+      slidesPerView: 3,
+    },
+    // When window width is >= 1200px
+   
+  };
+  return (
+    
+
+    <Box id="achievements" paddingTop={{base:"70px",sm:"70px",md:"100px",lg:"100px"}}>
+<Box className='section-title' >
+           <Heading as="h2" opacity="0.5"  size="2xl"  >Achievements</Heading>
+        </Box>
     <Swiper 
-    spaceBetween={50}
+    centeredSlides={true}
+    loop={true}
+    autoplay={{
+      delay: 2500,
+      disableOnInteraction: false,
+    }}
+    navigation={true}
+    speed= {500}
+    spaceBetween={40}
     slidesPerView={3}
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
-    modules={[Pagination]}
+    breakpoints={swiperBreakpoints}
+    pagination={{
+      clickable: true,
+    }}
+    modules={[Autoplay, Pagination, Navigation]}
+    className="mySwiper"
   >
-    {/* <SwiperSlide className='SwiperSlide'>
+    <SwiperSlide className='SwiperSlide'>
       <img src={figma} />
-    </SwiperSlide> */}
+    </SwiperSlide>
     <SwiperSlide>
       <img src={bootstrap} className='SwiperSlide' />
     </SwiperSlide>
@@ -59,6 +82,8 @@ const Achievements = () => {
       <img src={Goi} className='SwiperSlide' />
     </SwiperSlide>
   </Swiper>
+
+  </Box>
   )
 }
 
