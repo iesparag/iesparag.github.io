@@ -1,0 +1,32 @@
+body {
+  position: relative;
+  height: 100%;
+} 
+
+ body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.SwiperSlide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.SwiperSlide > img {
+  display: block;
+  width: 100%;
+  /* z-index: 999; */
+}
