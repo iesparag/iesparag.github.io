@@ -77,6 +77,16 @@ const Navbar = () => {
                 </Link>
 
                 <Link
+                  to="experience"
+                  className="a-tag"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={2000}
+                >
+                  Experience
+                </Link>
+                <Link
                   to="education"
                   className="a-tag"
                   activeClass="active"
@@ -222,6 +232,17 @@ const Navbar = () => {
                         </p>
                       </Link>
 
+                      <Link
+                        to="experience"
+                        duration={2000}
+                        onClick={onClose}
+                        spy={true}
+                        smooth={true}
+                      >
+                        <p onClick={onClose} className="side">
+                          Experience
+                        </p>
+                      </Link>
                       <Link
                         to="education"
                         duration={2000}

@@ -31,6 +31,10 @@ const Tech = () => {
     },
     {
       image:
+        "https://gitlab.com/uploads/-/system/project/avatar/38241258/Screen_Shot_2022-08-16_at_12.14.39_AM.png",
+    },
+    {
+      image:
         "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
     },
     {
@@ -72,7 +76,7 @@ const Tech = () => {
         }}
       >
         {tech?.map((tech,index) => (
-          <Box bg="#fff" key={index} className="cube" style={{ margin: "50px auto" }}>
+          <Box bg="#fff"  key={index} className="cube" style={{ margin: "50px auto" }}>
             <Box className="top"></Box>
             <Box>
               <span style={{ "--i": 0 }}>

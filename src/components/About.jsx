@@ -55,7 +55,7 @@ expectations.
                 data-aos-duration="1500"
                 m="auto"
                 width={{base:"80%", md: "100%", lg: "50%" }}
-                src="https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/02/regurly-img.gif"
+                src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
                 bg="#202124"
                 alt="coder_gif"
               />

@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import Achievements from './components/Achievements';
 import Github from './components/Gibhub';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 // yguyyuyuuy
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       
       <Box paddingLeft={{base:"10px",md:"80px",lg:"100px" }}  paddingRight={{base:"10px",md:"80px",lg:"100px" }} >
         <About/>
+        <Experience/>
         <Education  />
         <Tech/>
         <Softskill/>
