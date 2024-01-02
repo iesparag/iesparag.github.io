@@ -53,15 +53,16 @@ expectations.
                 data-aos="fade-right"
                 data-aos-easing="ease-in-out"
                 data-aos-duration="1500"
+                borderRadius={"20px"}
                 m="auto"
                 width={{base:"80%", md: "100%", lg: "50%" }}
-                src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
+                src="https://www.vkreate.in/storage/services_image/2019-10-02-17-55-54-5d94e4aa809b3-web-development.gif"
                 bg="#202124"
                 alt="coder_gif"
               />
             </Flex>
           {/* </Show> */}
-          <Box letterSpacing="1px" width={{ base: "100%", md: "50%" }} p="10px">
+          <Box lineHeight={{base:"30px",md:"40px"}} letterSpacing="1px" width={{ base: "100%", md: "50%" }} p="10px">
             <Text mb="10px" fontWeight={{ base: "auto", md: "semibold" }}>
               Email Address :{" "}
               <a href="mailto:iesparagjain@gmail.com">
