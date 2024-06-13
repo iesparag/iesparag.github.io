@@ -1,5 +1,4 @@
-
-.title tr th{
+.title tr th {
     font-weight: 600;
     letter-spacing: 2px;
     color: rgb(173, 173, 173);
@@ -16,38 +15,34 @@
     margin: 25px;
 } */
 
-.name{
+.name {
     font-family: 800;
     letter-spacing: 3px;
     color: coral;
 }
 
-.about-title{
+.about-title {
     font-size: 2.5rem;
     margin-left: -40px;
 }
 
-
-.about-image{
+.about-image {
     width: 300px;
 }
 
-.details{
+.details {
     margin: 10px 25px;
 }
 
-
-
-.link{
+.link {
     margin-top: 40px;
 }
 
-
- :root {
+:root {
     --header-height: 3rem;
-    --hue-color: 142;   
+    --hue-color: 142;
     --first-color: #fdc50f;
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);  
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -58,10 +53,9 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-  
+
     --body-font: "Poppins", sans-serif;
-  
-   
+
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -69,11 +63,11 @@
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
-  
+
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-  
+
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: 0.25rem;
@@ -84,152 +78,141 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-  
+
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-  } 
-  
-  .qualification__tabs {
+}
+
+.qualification__tabs {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2);
-  }
-  
-  .qualification__button {
+}
+
+.qualification__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
-  }
-  
-  .qualification__button:hover {
+}
+
+.qualification__button:hover {
     color: var(--first-color);
-  }
-  
-  .qualification__icon {
+}
+
+.qualification__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
-  }
-  
-  .qualification__data {
+}
+
+.qualification__data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1rem;
-  }
-  
-  
-  
-  .qualification__subtitle {
+}
+
+.qualification__subtitle {
     display: inline-block;
     margin-bottom: var(--mb-1);
-  }
-  
-  /* .qualification__celendar {
+}
+
+/* .qualification__celendar {
     
   } */
-  
-  .qualification__rounder {
+
+.qualification__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
     background-color: #fb982f;
     border-radius: 50%;
-  }
-  
-  .qualification__line {
+}
+
+.qualification__line {
     display: block;
     width: 1px;
     height: 100%;
     background-color: #fb982f;
     transform: translate(6px, -7px);
-  }
-  
-  .qualification [data-content] {
-    display: none;
-  }
-  
-  .qualification__active[data-content] {
-    display: block;
-  }
-  
-  .qualification__button.qualification__active {
-    color: var(--first-color);
-  } 
-
-
-  .blob{
-    overflow: hidden;
-    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%; 
-    border-radius: 50%;
-    animation: motion 3.75s linear infinite;
- /* background-size: cover; */
-  /* background-position: center; */
-  }
-  
-@keyframes motion {
-  0%,
-  100% {
-    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
-  }
-  33% {
-    border-radius: 72% 28% 48% 48% /28% 28% 72% 72%;
-  }
-  66% {
-    border-radius: 100% 56% 56% 56% /100% 100% 42% 42%;
-  }
 }
 
+.qualification [data-content] {
+    display: none;
+}
 
+.qualification__active[data-content] {
+    display: block;
+}
 
+.qualification__button.qualification__active {
+    color: var(--first-color);
+}
 
+.blob {
+    overflow: hidden;
+    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+    border-radius: 50%;
+    animation: motion 3.75s linear infinite;
+    /* background-size: cover; */
+    /* background-position: center; */
+}
 
-
-
+@keyframes motion {
+    0%,
+    100% {
+        border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+    }
+    33% {
+        border-radius: 72% 28% 48% 48% /28% 28% 72% 72%;
+    }
+    66% {
+        border-radius: 100% 56% 56% 56% /100% 100% 42% 42%;
+    }
+}
 
 /* ---------------------------------------------------- */
 
-
 /* CSS */
 .button-92 {
-  --c: #fff;
-  /* text color */
-  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-    #004dff;
-  /* background color */
-  color: #0000;
-  border: none;
-  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
-  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
-    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
-  outline-offset: .1em;
-  transition: 0.3s;
+    --c: #fff;
+    /* text color */
+    background:
+        linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p, 100%) /
+            300% no-repeat,
+        #004dff;
+    /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+    text-shadow:
+        calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+        calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+    outline-offset: 0.1em;
+    transition: 0.3s;
 }
 
 .button-92:hover,
 .button-92:focus-visible {
-  --_p: 0%;
-  --_i: 1;
+    --_p: 0%;
+    --_i: 1;
 }
 
 .button-92:active {
-  text-shadow: none;
-  color: var(--c);
-  box-shadow: inset 0 0 9e9q #0005;
-  transition: 0s;
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9Q #0005;
+    transition: 0s;
 }
 
 .button-92 {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0;
-  cursor: pointer;
-  padding: .1em .3em;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    padding: 0.1em 0.3em;
 }
 
-
-
 /* ---------------------------------------------------------- */
-
 
 /* CSS */

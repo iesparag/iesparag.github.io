@@ -1,22 +1,18 @@
-
-a:link{
-   
+a:link {
     color: fff;
 }
-a:visited{
-    color:#fb982f;
-
+a:visited {
+    color: #fb982f;
 }
-a:hover{
-    color:#fb982f;
+a:hover {
+    color: #fb982f;
     font-weight: 900;
-
 }
-a:active{
-    color:#fb982f
+a:active {
+    color: #fb982f;
 }
 
-.side{
+.side {
     margin: 10px auto;
     padding: 20px;
     background-color: black;

@@ -9,9 +9,9 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button-82-shadow {
+}
+
+.button-82-shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,13 +21,10 @@
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-  }
-  
-  .button-82-edge {
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-82-edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,15 +32,15 @@
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      #fb982f 0%,
-      #fb982f 8%,
-      #fb982f 92%,
-      #fb982f 100%
+        to left,
+        #fb982f 0%,
+        #fb982f 8%,
+        #fb982f 92%,
+        #fb982f 100%
     );
-  }
-  
-  .button-82-front {
+}
+
+.button-82-front {
     display: block;
     position: relative;
     padding: 6px 27px;
@@ -55,50 +52,41 @@
     background: #fb982f;
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-  }
-  
-  @media (min-width: 768px) {
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@media (min-width: 768px) {
     .button-82-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
+        font-size: 1.25rem;
+        padding: 12px 42px;
     }
-  }
-  
-  .button-82-pushable:hover {
+}
+
+.button-82-pushable:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
-  }
-  
-  .button-82-pushable:hover .button-82-front {
+}
+
+.button-82-pushable:hover .button-82-front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-  }
-  
-  .button-82-pushable:active .button-82-front {
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
     transform: translateY(-2px);
     transition: transform 34ms;
-  }
-  
-  .button-82-pushable:hover .button-82-shadow {
+}
+
+.button-82-pushable:hover .button-82-shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-  }
-  
-  .button-82-pushable:active .button-82-shadow {
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-  }
-  
-  .button-82-pushable:focus:not(:focus-visible) {
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
     outline: none;
-  }
+}

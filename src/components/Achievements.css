@@ -1,7 +1,7 @@
-.swiper{
-    width:"100vw";
+.swiper {
+    width: "100vw";
     height: 300px;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -13,24 +13,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .swiper-slide img {
+}
+
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  /* Customize the pagination container */
+/* Customize the pagination container */
 .swiper-pagination {
     background-color: transparent; /* Set the background to transparent */
     position: relative;
     bottom: 20px; /* Adjust as needed */
-  }
-  
-  /* Customize the individual pagination bullets */
-  .swiper-pagination-bullet {
+}
+
+/* Customize the individual pagination bullets */
+.swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fb982f !important;
@@ -38,47 +38,33 @@
     margin: 0 5px;
     opacity: 0.7; /* Adjust opacity as needed */
     transition: opacity 0.3s ease; /* Add a transition effect */
-  }
-  
-  /* Customize the active pagination bullet */
-  .swiper-pagination-bullet-active {
-    background-color:#fb982f !important; /* Change the color of the active bullet */
+}
+
+/* Customize the active pagination bullet */
+.swiper-pagination-bullet-active {
+    background-color: #fb982f !important; /* Change the color of the active bullet */
     opacity: 1; /* Make the active bullet fully opaque */
-  }
-  
+}
 
-
-  
- 
-
-  /* Add custom styles for Swiper navigation */
+/* Add custom styles for Swiper navigation */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #fb982f !important; /* Change the color of the buttons */
-  /* background-color: #fb982f !important; Change the background color of the buttons */
-  border-radius: 50%; /* Add rounded corners to the buttons */
-  width: 30px !important;  /* Adjust the width of the buttons */
-  height: 30px !important; /* Adjust the height of the buttons */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add a transition effect */
+    color: #fb982f !important; /* Change the color of the buttons */
+    /* background-color: #fb982f !important; Change the background color of the buttons */
+    border-radius: 50%; /* Add rounded corners to the buttons */
+    width: 30px !important; /* Adjust the width of the buttons */
+    height: 30px !important; /* Adjust the height of the buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        transform 0.3s ease-in-out,
+        background-color 0.3s ease-in-out; /* Add a transition effect */
 }
 
 /* Add hover styles for the navigation buttons */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #555; /* Change the background color when hovered */
-  transform: scale(1.1); /* Enlarge the button when hovered */
+    background-color: #555; /* Change the background color when hovered */
+    transform: scale(1.1); /* Enlarge the button when hovered */
 }
-
-
-
-
-
-
-
-
-
-  
-
