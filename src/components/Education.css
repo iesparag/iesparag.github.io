@@ -152,8 +152,9 @@
 .blob {
     overflow: hidden;
     border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
-    border-radius: 50%;
+    border-radius: 60%;
     animation: motion 3.75s linear infinite;
+    opacity: .75;
     /* background-size: cover; */
     /* background-position: center; */
 }
@@ -216,3 +217,39 @@
 /* ---------------------------------------------------------- */
 
 /* CSS */
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes hoverAnimation {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+/* .animated-box {
+    animation-name: fadeInLeft;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in-out;
+  } */
+
+  .animated-box {
+    animation: fadeInLeft 1s ease-in-out, hoverAnimation 1s ease-in-out;
+  }
+  
+
+  .animated-box:hover {
+    animation-name: hoverAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }

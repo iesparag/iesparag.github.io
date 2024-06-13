@@ -1,5 +1,6 @@
 import { Box, Heading, Grid, Image, Hide } from "@chakra-ui/react";
 import { CalendarIcon } from "@chakra-ui/icons";
+import animation from "../assets/animation.jpeg"
 import React from "react";
 import "./Education.css";
 import AOS from "aos";
@@ -120,16 +121,15 @@ const Education = () => {
                     {/* left Box */}
                     <Hide below="lg">
                         <Box
-                            data-aos="fade-left"
-                            data-aos-easing="ease-in-out"
-                            data-aos-duration="1000"
-                            mt={{ lg: "20", md: "auto" }}
-                            width={{ base: "90%", md: "65%" }}
+                            
+                            className="animated-box"
+                            width={{ base: "90%", md: "70%",lg:"80%" }}
                             m="auto"
+                            
                         >
                             <Image
                                 className="blob"
-                                src="https://camo.githubusercontent.com/8bf6f6d78abc81fcf9c49f10649423e73ea44bc248e83aaae8759d401c829a84/68747470733a2f2f70687973696373677572756b756c2e66696c65732e776f726470726573732e636f6d2f323031392f30322f6368617261637465722d312e676966"
+                                src={animation}
                             />
                         </Box>
                     </Hide>

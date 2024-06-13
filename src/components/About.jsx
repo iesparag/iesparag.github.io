@@ -18,36 +18,43 @@ const About = () => {
             {/* below content start */}
 
             <Box px="10px">
-                <Box>
-                    <Heading
+                {/* <Box> */}
+                    {/* <Heading
                         letterSpacing="2px"
                         as="h2"
                         mb="15px"
                         size={{ base: "md", md: "xl" }}
                     >
                         I'm Parag jain
-                    </Heading>
-                    <Heading as="h2" mb="15px" size={{ base: "md", md: "xl" }}>
+                    </Heading> */}
+                    {/* <Heading as="h2" mb="15px" size={{ base: "md", md: "xl" }}>
                         <span>Full Stack Web Developer</span>
-                    </Heading>
+                    </Heading> */}
 
                     <Box
-                        px={{ base: "15px", md: "50px", lg: "100px" }}
+                        px={{ base: "15px", md: "20px", lg: "10px" }}
                         lineHeight={{ base: "30px", md: "40px" }}
                         as="h4"
-                        size={{ base: "18px", md: "md" }}
+                        fontSize={{ base: "18px", md: "18px" }}
                         letterSpacing="1.5px"
                     >
-                        Highly motivated and detail-oriented{" "}
-                        <span>full-stack MERN developer</span> with a strong
-                        foundation in{" "}
-                        <span>JavaScript, React, Node.js, and MongoDB </span>.
-                        Seeking an opportunity to contribute my technical skills
-                        and passion for innovation to a dynamic team focused on
-                        creating exceptional web applications that meet and
-                        exceed user expectations.
+                        I am a Full Stack MERN Developer with{" "}
+                        <span>2.5 years</span> of experience in building
+                        user-focused web applications using{" "}
+                        <span>JavaScript</span>, <span>React</span>,{" "}
+                        <span>Node.js</span>, and <span>MongoDB</span>. I excel
+                        in both <span>frontend</span> and <span>backend</span>{" "}
+                        development, ensuring seamless and efficient solutions.
+                        My passion for <span>innovation</span> drives me to
+                        create exceptional web applications that meet user
+                        needs. I thrive in{" "}
+                        <span>collaborative environments</span> and am always
+                        eager to learn and adapt. Currently, I am seeking new
+                        opportunities to leverage my skills and grow within a
+                        dynamic team. Let’s connect and collaborate to create
+                        outstanding web solutions!
                     </Box>
-                </Box>
+                {/* </Box> */}
                 <Flex
                     gap={10}
                     mt="50px"

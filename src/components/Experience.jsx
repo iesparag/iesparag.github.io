@@ -19,7 +19,9 @@ const Experience = () => {
                     Experience
                 </Heading>
             </Box>
-            <Box>
+            <Box
+             px={{ base: "15px", md: "20px", lg: "10px" }}
+            >
                 <Box mb="10px">
                     <Text color="#fb982f" fontSize="24px">
                         BrainerHub Solutions, Ahmedabad
@@ -32,6 +34,7 @@ const Experience = () => {
                     justifyContent="space-between"
                     gap="5% !important"
                     display={{ base: "block", md: "block", lg: "flex" }}
+                   
                 >
                     <Box w={"100%"} mb={{ base: "5%", lg: "auto" }}>
                         <Text color="#fb982f" fontSize="20px">
