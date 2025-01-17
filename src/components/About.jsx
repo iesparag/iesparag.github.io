@@ -69,7 +69,7 @@ const About = () => {
                             borderRadius={"20px"}
                             m="auto"
                             width={{ base: "80%", md: "100%", lg: "50%" }}
-                            src="https://www.vkreate.in/storage/services_image/2019-10-02-17-55-54-5d94e4aa809b3-web-development.gif"
+                            src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
                             bg="#202124"
                             alt="coder_gif"
                         />
